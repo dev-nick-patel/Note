@@ -28,7 +28,7 @@ jobs:
       uses: wzieba/Firebase-Distribution-Github-Action@v1.2.2
       with:
         appId: '1:960772015195:android:15cd5c2951d8fbe77fab7e'
-        token: '1//0ghUqb9zOj27UCgYIARAAGBASNgF-L9Ir7BTEl796ouRxynOib9JkwVOxIY5vBUnqsSa0eRD-j4lj9Ha-uv5NPCNoU9LT2xC-9w'
+        token: '1//0gaAtBZwk9bJnCgYIARAAGBASNgF-L9IrL20kyVKuCKDnH28Hcqat_MGdLlr05mGaF3rY64LqjNvNBjy6p7xGQ_XHrj1MgEehbA'
         groups: testers
         file: app/build/outputs/apk/debug/app-debug.apk
         

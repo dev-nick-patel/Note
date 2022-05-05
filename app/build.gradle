@@ -29,7 +29,6 @@ android {
 //                releaseNotesFile="/path/to/releasenotes.txt"
                 groups = "testers"
                 artifactType="APK"
-
             }
         }
         release {
