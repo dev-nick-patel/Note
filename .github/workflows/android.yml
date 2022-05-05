@@ -28,8 +28,9 @@ jobs:
       uses: wzieba/Firebase-Distribution-Github-Action@v1.2.2
       with:
         appId: ${{secrets.FIREBASE_APP_ID}}
-        token: ${{secrets.FIREBASE_TOKEN}}
-        groups: QA
+        firebase_cli_token: ${{secrets.FIREBASE_TOKEN}}
+        debug_token: 'D0C174CF-F66B-4085-B74B-D7E949EB0657'
+        groups: testers
         file: app/build/outputs/apk/debug/app-debug.apk
         
     - name: Grant execute permission for gradlew
