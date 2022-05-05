@@ -22,7 +22,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android Jetpack Compose")
+                    Greeting("Android Nikunj Jetpack Compose")
                 }
             }
         }
