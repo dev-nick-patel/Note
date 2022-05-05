@@ -29,7 +29,6 @@ jobs:
       with:
         appId: ${{secrets.FIREBASE_APP_ID}}
         token: ${{secrets.FIREBASE_TOKEN}}
-        debug: 'D0C174CF-F66B-4085-B74B-D7E949EB0657'
         groups: testers
         file: app/build/outputs/apk/debug/app-debug.apk
         
