@@ -37,7 +37,7 @@ fun Greeting(name: String) {
         Text(
             text = "Hello $name",
             modifier = Modifier.padding(all = 4.dp),
-            style = MaterialTheme.typography.button
+            style = MaterialTheme.typography.body2
         )
     }
 }
