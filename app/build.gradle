@@ -25,6 +25,7 @@ android {
 
         debug {
             firebaseAppDistribution {
+                releaseNotes="Release notes for full version"
 //                releaseNotesFile="/path/to/releasenotes.txt"
                 groups = "testers"
                 artifactType="APK"
