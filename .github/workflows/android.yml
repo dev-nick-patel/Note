@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-
+    name: Upload apk to App Tester
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,17 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-
+        
+    - name: build release 
+      run: bash ./gradlew assembleDebug
+    - name: upload artifact to Firebase App Distribution
+      uses: wzieba/Firebase-Distribution-Github-Action@v1.2.2
+      with:
+        appId: '1:960772015195:android:15cd5c2951d8fbe77fab7e'
+        token: '1//0gwNShWIhmvsCCgYIARAAGBASNgF-L9IrTz4ShBIxOHQPxtINDHAJ3KF9Bl79uYCSUH73MGNSaLfvJ9wbU6SRZ4HNEMDJ0ty_0w'
+        groups: QA
+        file: app/build/outputs/apk/debug/app-debug.apk
+        
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
