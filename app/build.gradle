@@ -29,6 +29,7 @@ android {
 //                releaseNotesFile="/path/to/releasenotes.txt"
                 groups = "testers"
                 artifactType="APK"
+                versionNameSuffix = "(Debug)"
             }
         }
         release {
