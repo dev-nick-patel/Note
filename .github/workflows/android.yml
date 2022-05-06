@@ -22,6 +22,12 @@ jobs:
         distribution: 'temurin'
         cache: gradle
         
+    - name: Generate build number
+      id: buildnumber
+      uses: einaregilsson/build-number@v3
+      with:
+        token: ${{secrets.github_token}}
+        
     - name: build release 
       run: bash ./gradlew assembleDebug
     - name: upload artifact to Firebase App Distribution
