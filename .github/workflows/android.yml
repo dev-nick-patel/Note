@@ -2,9 +2,8 @@ name: Android CI
 
 on:
   push:
-    branches:
-    - main
-    - feature
+    branches: [ main ]
+    
   pull_request:
     branches: [ main ]
 
@@ -21,12 +20,6 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
-        
-    - name: Generate build number
-      id: buildnumber
-      uses: einaregilsson/build-number@v3
-      with:
-        token: ${{secrets.github_token}}
         
     - name: build release 
       run: bash ./gradlew assembleDebug
