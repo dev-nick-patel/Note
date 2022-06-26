@@ -3,7 +3,7 @@ name: Android CI
 on:
   push:
     branches: [ main ]
-    
+
   pull_request:
     branches: [ main ]
 
@@ -35,7 +35,7 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-      
+
   apk:
     name: Generate APK
     runs-on: ubuntu-latest
